@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing..</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px 20px;
+        }
+        .container p{
+            background-color: aqua;
+            width: 300px;
+            padding: 20px;
+            border: 2px dashed black;
+            font-size: 25px;
+        }
+        #idcontainer p{
+        background-color: tomato;
+        }
+    </style>
+    <script>
+        function handleSubmit(){
+            const name = document.getElementById('name').value
+            const password = document.getElementById('password').value
+            console.log(name,password)
+        }
+    </script>
+</head>
+<body>
+    
+<div class="container">
+    <p>testing...</p>
+    <p>testing2...</p>
+</div>
+<div class="container">
+    <p>testing...</p>
+    <p>testing2...</p>
+</div>
+
+<form>
+    <input id="name" type="text" minlength="10" maxlength="15" required placeholder="Username" />
+    <br/>
+    <br/>
+    <input id="password" type="datetime-local" required placeholder="Password" />
+<br/>
+<br/>
+    <button type="button" onclick="handleSubmit()">Submit</button>
+</form>
+
+</body>
+</html>
